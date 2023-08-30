@@ -9,6 +9,7 @@ const Filter = ({ filter, handleFilterChange }) => {
         Find contact by name:
         <input
           className={css.input}
+          autoComplete="off"
           type="text"
           placeholder="Search contacts..."
           value={filter}
