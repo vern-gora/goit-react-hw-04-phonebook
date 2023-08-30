@@ -12,9 +12,9 @@ function App() {
   useEffect(() => {
     const contact = localStorage.getItem('contacts');
     const parsedContacts = JSON.parse(contact);
-    // if (parsedContacts) {
-    setContacts(parsedContacts);
-    // }
+    if (parsedContacts) {
+      setContacts(parsedContacts);
+    }
   }, []);
 
   useEffect(() => {
